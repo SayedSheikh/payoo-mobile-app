@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo-Mobile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-slate-900">
+    <section class="max-w-[400px] mx-auto bg-[#F4F5F7] h-screen">
+      <!-- logo -->
+      <div
+        class="flex flex-col justify-center items-center relative translate-y-[30%]">
+        <img class="w-[80%]" src="./assets/bg.png" alt="" />
+        <img class="absolute top-[10%]" src="./assets/Group.png" alt="" />
+      </div>
+      <!-- Form -->
+
+      <div class="translate-y-[-30%]">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-full shadow-2xl rounded-[24px]">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label
+                  class="fieldset-label text-[#080808] text-base font-semibold"
+                  >Mobile Number</label
+                >
+                <input
+                  type="number"
+                  class="input rounded-[32px] bg-[#F4F5F7] border-none py-[16px] px-[20px] placeholder:text-base h-[53px]"
+                  placeholder="Enter your number" />
+                <label
+                  class="fieldset-label text-[#080808] text-base font-semibold"
+                  >4 digit pin</label
+                >
+                <input
+                  type="text"
+                  class="input rounded-[32px] bg-[#F4F5F7] border-none py-[16px] px-[20px] placeholder:text-base h-[53px]"
+                  placeholder="Enter 4 digit pin" />
+
+                <button
+                  class="btn bg-[#0874F2] text-[white] text-[20px] rounded-[32px] py-[20px] mt-4 h-[53px]">
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
