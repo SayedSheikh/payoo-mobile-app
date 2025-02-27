@@ -12,7 +12,7 @@
   </head>
 
   <body class="bg-slate-900">
-    <section class="max-w-[400px] mx-auto bg-[#F4F5F7] h-screen">
+    <section class="max-w-[400px] mx-auto bg-[#F4F5F7] min-h-screen">
       <!-- logo -->
       <div
         class="flex flex-col justify-center items-center relative translate-y-[30%]">
@@ -31,7 +31,9 @@
                   >Mobile Number</label
                 >
                 <input
+                  id="login-number"
                   type="number"
+                  value="02302302312"
                   class="input rounded-[32px] bg-[#F4F5F7] border-none py-[16px] px-[20px] placeholder:text-base h-[53px]"
                   placeholder="Enter your number" />
                 <label
@@ -39,11 +41,14 @@
                   >4 digit pin</label
                 >
                 <input
+                  id="login-pin"
+                  value="1234"
                   type="text"
                   class="input rounded-[32px] bg-[#F4F5F7] border-none py-[16px] px-[20px] placeholder:text-base h-[53px]"
                   placeholder="Enter 4 digit pin" />
 
                 <button
+                  id="login-btn"
                   class="btn bg-[#0874F2] text-[white] text-[20px] rounded-[32px] py-[20px] mt-4 h-[53px]">
                   Login
                 </button>
@@ -53,5 +58,7 @@
         </div>
       </div>
     </section>
+    <script src="./scripts/utilities.js"></script>
+    <script src="./scripts/login.js"></script>
   </body>
 </html>
